@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Practice</title>
+    <style>
+        .test-div {
+            background-color: aqua;
+            border: 2px solid black;
+            height: 150px;
+            width: 150px;
+            margin: 10px;
+        }
+
+        #layout {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        #layout1 {
+            display: flex;
+            justify-content: flex-start;
+            border: 1px solid black;
+        }
+
+        #layout2 {
+            display: flex;
+            justify-content: flex-end;
+            border: 1px solid black;
+        }
+
+        #layout3 {
+            display: flex;
+            justify-content: center;
+            border: 1px solid black;
+        }
+
+        #layout4 {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+        }
+
+        #layout5 {
+            display: flex;
+            justify-content: space-around;
+            border: 1px solid black;
+        }
+
+        #layout6 {
+            display: flex;
+            align-items: stretch;
+            border: 1px solid black;
+        }
+
+        #layout7 {
+            display: flex;
+            align-items: flex-start;
+            border: 1px solid black;
+        }
+
+        #layout8 {
+            display: flex;
+            align-items: flex-end;
+            border: 1px solid black;
+        }
+        
+        #layout9 {
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+        }
+
+        section {
+            width: 60%;
+        }
+    </style>
+    <!-- Deadly combo of justify content, align item & flex direction -->
+</head>
+<body>
+    <section>
+    <h3>Flex Box</h3>
+    <p>Combination of Flex, Justify Content & Flex Direction</p>
+    <div id="layout">
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    </div>
+
+    <h3>Justify Content</h3>
+    <p>DIfferent Aspects of Conent Justification</p>
+    <div id="layout1">
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    </div>
+
+    <h3>Flex END</h3>
+    
+    <div id="layout2">
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    </div>
+
+    <h3>Center</h3>
+    
+    <div id="layout3">
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    </div>
+
+    <h3>Space Between</h3>
+    
+    <div id="layout4">
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    </div>
+
+    <h3>Space Around</h3>
+    
+    <div id="layout5">
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    </div>
+
+    <h3>ALIGN ITEMS</h3>
+    <p>Stretch</p>
+    <div id="layout6">
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    </div>
+
+    <h3>Flex Start</h3>
+    
+    <div id="layout7">
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    </div>
+
+    <h3>Flex END</h3>
+    
+    <div id="layout8">
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    </div>
+
+    <h3>Center</h3>
+    
+    <div id="layout9">
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    <div class="test-div"></div>
+    </div>
+
+    </section>
+</body>
+</html>
