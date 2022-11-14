@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+* {
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(24, 23, 23);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,span {
+    color: aquamarine;
+    text-align: center;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+p {
+    color: whitesmoke;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.about-me__info--title {
+    
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.row {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.text-yellow {
+    color: #F5E050;
+}
+
+.about-me__info--title {
+    margin-bottom: 15px;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__link--list {
+    display: flex;
+}
+
+.nav__link--anchor {
+    margin: 0 12px;
+    color:rgb(64, 218, 166);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav__link--anchor-primary {
+    background-color:#F5E050;
+    padding: 8px 12px;
+    border-radius: 5px;
+    color: black;
+}
+
+.nav__link--anchor-primary:hover {
+    cursor: pointer;
+    background-color:#d8bd0f;
+}
+
+.personal__logo {
+    font-size: 24px;
+    color:rgb(64, 218, 166);
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+
+/* ABOUT ME */
+
+.about-me {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me__info {
+    display: flex;
+    flex-direction: column;
+}
+.about-me__info--container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-me__picture--mask {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 16px #f5df50ca;
+    margin-bottom: 30px;
+}
+
+.about-me__picture {
+    width: 100%;
+
+    /* improving the profile photo */
+    transform: scale(2.3);
+    padding-top: 8px;   
+}
+
+.about-me__info--para {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+.about-me__link {
+    text-decoration: none;
+    font-size: 25px;
+    color:#7fffd4;
+    margin: 0 10px;
+}
+
+.about-me__link:hover {
+    color:#F5E050;
+}
+
+.about-me__img--container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.about-me__img {
+    max-width: 800px;
+    width: 100%;
+}
