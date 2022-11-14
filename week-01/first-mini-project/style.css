@@ -1,9 +1,288 @@
-#test {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+body {
+    font-family: Quicksand;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+.brackets {
+    width: 50px;
+    height: 50px;
+}
+a {
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+header {
+    background-color: bisque;
+    height: calc(100vh - 60px);
+    display: flex;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+#img1 {
+    height: 400px;
+    width: 500px;
+}
+    
+h1 {
+    font-size: 70px;
+}
+
+#subheader {
+    font-size: 28px;
+}
+
+button {
+    background-color: aqua;
+    color: black;
+    padding: 10px 20px;
+    font-size: 28px;
+    cursor: pointer;
+    border: none;
+}
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding-left: 24px;
+}
+
+#hero {
+    background-color: rgba(165, 42, 42, 0.274);
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about {
+    padding: 40px;
+    background-color:beige;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-column {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    text-align: center;
+    font-size: 34px ;
+}
+
+#social  {
+    padding-top: 10px;
+    background-color:azure
+}
+
+#social div {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 80%;
+}
+
+#social figure img {
     width: 200px;
     height: 200px;
-    border: 10px solid green;
-    background-color: aquamarine;
-    padding: 10px;
-    margin: 10px;
-    box-sizing: border-box;
 }
+
+img {
+    width: 100%;
+}
+
+.contact-section {
+    background-color: aquamarine;
+    padding-top: 10px;
+}
+.contact-section form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.contact-section input {
+    margin:20px;
+}
+
+input , textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #aaf5ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer img {
+    display: block;
+    text-align: center;
+}
+
+
+/* RESPONSIVENESS */
+/* Hero SECTION */
+@media (max-width: 728px) {
+
+#hero {
+    flex-direction: column;    
+    }
+
+
+#hero-button {
+    max-width: 200px;
+}
+
+#img1 {
+    width: 330px;
+    height: 270px;
+}
+
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+#subheader {
+    font-size: 15px;
+    text-align: center;
+}
+
+#hero-button {
+    align-items: center;
+}
+
+#hero-description {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    align-items: center;
+}
+
+/* ABOUT SECTION */
+
+#about-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#about-section-description {
+    width: 100%;
+}
+
+#about-section-image {
+    width: 100%;
+}
+
+
+/* SOCIAL  SECTION */
+
+.social-section {
+    background-color: rgba(255, 127, 80, 0.735);
+    display: flex;
+    flex-direction: column;
+}
+
+.social-section-description {
+    max-width: 100%;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+.social-section-image {
+    width: 200px;
+    height: 200px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-section-form {
+    align-items: center;
+}
+.contact-section-button {
+    max-width: 200px;
+    background-color: blue;
+    margin-bottom: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 127, 80, 0.735);
+    margin-top: -20px;
+    padding-top: 10px;
+}
+
+footer ul {
+    text-align: center;
+}
+footer ul a {
+
+    font-size: 15px;
+}
+}
+
+/* pixels for responsiveness */
+
+/* Use Media queries 
+@media (max-width: 576px) 786px 992px 1220px
+{
+.div {
+font-size:20px;
+}
+ */
+
+
+/* to animate a certain element do the following code */
+/* element {
+    animation: float 2000ms infinite;
+    transition: all 300ms;
+}
+
+element:hover {
+    background-color: black;
+    color: aqua;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+} */
