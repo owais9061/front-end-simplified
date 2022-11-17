@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
 * {
     font-family: 'Oswald', sans-serif;
-    background-color: #181717;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #181717;
 }
 
 h1,h2,h3,h4,h5,h6,span {
@@ -17,7 +20,11 @@ h1 {
     font-size: 36px;
 }
 
+a {
+    text-decoration: none;
+}
 p {
+    font-family: sans-serif;
     color: whitesmoke;
     line-height: 1.5;
     font-size: 16px;
@@ -41,6 +48,11 @@ li {
     flex: 1;
 }
 
+
+.container {
+    padding: 50px 0;
+}
+ 
 .row {
     width: 100%;
     max-width: 800px;
@@ -53,6 +65,10 @@ li {
 
 .about-me__info--title {
     margin-bottom: 15px;
+}
+
+.section-title {
+    margin-bottom: 30px;
 }
 
 /* NAVIGATION BAR */
@@ -80,9 +96,10 @@ nav {
 
 .nav__link--anchor-primary {
     background-color:#F5E050;
-    padding: 8px 12px;
-    border-radius: 5px;
+    padding: 2px 20px;
+    border-radius: 30px;
     color: black;
+    font-weight: 400;
 }
 
 .nav__link--anchor-primary:hover {
@@ -97,6 +114,10 @@ nav {
     font-weight: bold;
 }
 
+.text__yellow--large {
+    color: #F5E050;
+    font-size: 30px;
+}
 
 /* ABOUT ME */
 
@@ -158,9 +179,218 @@ nav {
     flex: 1;
     display: flex;
     align-items: center;
+    margin-left: 5rem;
+
 }
 
 .about-me__img {
-    max-width: 800px;
+    margin-top: -50px;
+    max-width: 600px;
     width: 100%;
+    margin-bottom: -7rem;
+}
+
+.stack-navigate__img--container {
+    position: relative;
+    left: 45px;
+    width: 100px;
+    height: 100px;
+}
+
+.stack-navigate__img--container-1 {
+    position: relative;
+    top: -4.5rem;
+    left:100%;
+    width: 100px;
+    height: 100px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.stack-navigate__img {
+    width: 100%;
+    
+}
+
+/* TECH STACK */
+
+#language {
+    height:100vh;
+}
+
+.language__img {
+    width: 100%;
+    max-width: 90px;
+    transition: all 300ms ease;
+}
+.language {
+    width: 33%;
+    display:flex ;
+    justify-content: center;
+    position: relative;
+}
+
+.language__img:hover {
+    padding: 10px;
+    border-radius: 20px;
+    filter: brightness(80%);
+    opacity: 0.9;
+    transform: scale(1.1);
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 16px;
+}
+
+.language__list {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+}
+
+.langauge__name {
+    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    font-size: 13px;
+    font-family: sans-serif;
+    transform: scale(0);
+    transition: all 300ms;
+}
+
+.language:hover  .langauge__name {
+    transform: scale(1);
+}
+
+/* PROJECTS */
+
+.project__image {
+    width: 100%;
+}
+
+.projects__wrapper {
+    display: flex;
+    box-shadow: 0 5px 10px rgba(79, 75, 75, 0.8);
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.projects__wrapper:before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1c1d25;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    z-index: 2;
+}
+
+/* Here we target before suedo selectr using the project parent element */
+.project:hover .projects__wrapper:before {
+    opacity: 0.6;
+}
+
+.project:hover .project__image {
+    transition: scale(1.5);
+    filter: blur(5px);
+}
+
+.project:hover .project__description {
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.project__list {
+    padding-top: 50px;
+}
+
+.project__description {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    opacity: 0;
+    transform: translateY(100%);
+    max-width: 550px;
+    z-index: 3;
+    /* here after transisiton writing the elemnt specificliy we want to have transiiton in is a better practice */
+    transition: transform 450ms, opacity 300ms;
+}
+
+.project {
+    margin-bottom: 75px;
+}
+.project__description--title,
+.project__description--subtitle,
+.project__description--para,
+.project__description--link {
+    text-align: left;
+    color: whitesmoke;
+}
+
+.project__description--para {
+    margin: 16px 0;
+}
+
+.project__description--link {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.project__list a{
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+footer {
+    background-color:#d8bd0f
+}
+
+.footer__logo--image {
+    width: 70px;
+    height: 70px;
+}
+
+.footer__row {
+    padding: 2.5% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__social--link {
+    color: black;
+    font-weight: 500;
+}
+
+.footer__logo--image {
+    margin-bottom: 20px;
+}
+
+.footer__copyright {
+    text-align: center;
+    margin: 5px auto;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.footer__social--links a {
+    margin-left: 15px;
+}
+
+.footer__social--links a:hover {
+    color:#7fffd4
+}
+
+.footer__copyright {
+    color: whitesmoke;
 }
