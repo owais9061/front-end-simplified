@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.nav__container {
+    display: flex;
+    padding: 0 24px;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav__link  {
+    transition: all 400ms ease;
+    margin-left: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color:#7342d6;
+    padding: 5px 20px;
+}
+
+.nav__link a:hover {
+    text-decoration: underline;
+    
+}
+
+.nav__link--primary {
+    border: 2px solid #6814b6;
+    border-radius: 4px;
+}
+
+.nav__link--primary:hover {
+    background-color: #6814b662;
+    text-decoration: none;
+}
+
+.nav__link--primary a:hover {
+    text-decoration: none;
+}
+
+#landing {
+    background-color: #7342d61a;
+}
+
+.purple {
+    color: #6814b6;
+}
+
+header {
+    height: calc(100vh-90px);
+}
+
+.header__container {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 55px;
+    color: #6621a7;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: translateY(2px);
+}
+
+.btn {
+    background-color: #6621a7;
+    color: whitesmoke;
+    padding: 12px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.header__img--wrapper {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.header__img--wrapper img {
+    width: 60%;
+}
+
+.container {
+    padding: 50px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*
+ HIGHLIGHTS
+  */
+
