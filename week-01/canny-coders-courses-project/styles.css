@@ -5,6 +5,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+body {
+    max-width: 100vw;
+}
+
 nav {
     height: 80px;
     display: flex;
@@ -14,6 +18,10 @@ img {
     width: 100%;
     height: 100%;
 
+}
+
+p {
+    line-height: 1.5;
 }
 
 .nav__container {
@@ -154,3 +162,118 @@ button {
  HIGHLIGHTS
   */
 
+#highlights {
+    position: relative;
+    /* this is done to make the SVG in the highlight section relative to the parent section (body) */
+}
+/* 
+#highlights:before {
+    background:url("./assets/wave-up.svg");
+    left: 0;
+    content: "";
+    position: absolute;
+    width: 98.7vw;
+    height: 12vw;
+    z-index: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    transform: translateY(0%);
+} */
+
+.highlights__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.highlight {
+    z-index: 1;
+    padding: 0 24px;
+    width: calc(100%/3); 
+    /* insted of using 333% width we here use calculate function to optimize the web arrangemnt */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight__para {
+    text-align: center;
+    font-size: 16px;
+}
+
+.highlight__img {
+    color: #7821ca;
+    border: 2px solid #6621a7;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.highlight__subtitle {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+/* 
+
+COURSES 
+
+*/
+
+#features {
+    background-color: #7342d61a;
+    padding-top: 5vw;
+}
+
+.courses {
+    display:flex;
+}
+
+.course {
+    width: calc(100%/3);
+}
+.course__img {
+    max-height: 300px;
+    max-width: 360px;
+    cursor: no-drop;
+}
+
+.course__img--wrapper {
+    margin-bottom: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+}
+
+.course:hover .course__img {
+    transform: scale(1.02);
+}
+
+.course__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.course__title:hover {
+    text-decoration: underline;
+    cursor: no-drop;
+}
+
+.course__rating {
+    margin-bottom: 10px;
+    color: #fabf2a;
+}
+
+
+
+.course__price--normal {
+    text-decoration: line-through;
+    padding: 6px;
+    color: #bfbfbf;
+}
