@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
     <title>Home - Canny Coders</title>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-
+    <script src="./index.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -26,14 +26,37 @@
                         <a href="#">Courses</a>
                     </li>
                 </ul>
+            <!-- Below is the code for Hamburge menu -->
+            <button class="btn__menu" onclick="openMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="menu__backdrop">
+                <button class="btn__menu 
+                    btn__menu--close" onclick="closeMenu()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="menu__links">
+                    <li class="menu__list">
+                        <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#features" class="menu__link" onclick="closeMenu()">Courses</a>
+                    </li>
+                    <li class="menu__list">
+                        <a href="#" class="menu__link no__cursor" onclick="closeMenu()">About Us</a>
+                    </li>
+                </ul>
             </div>
+        </div>
         </nav>
             <header>
                 <div class="header__container">
                     <div class="header__description">
                         <h1>Pakistan's most interactive learning community.</h1>
                         <h2>Join the other<span class="purple"> Canny</span> developers</h2>
-                        <button class="btn">Browse Courses</button>
+                        <a href="#recent__courses">
+                            <button class="btn">Browse Courses</button>
+                        </a>  
                     </div>
                 </div>
             </header>
@@ -98,8 +121,8 @@
                             <figure class="course__img--wrapper">
                                 <img src="./assets/courses/Excel.png" alt="Excel-Course" class="course__img">
                             </figure>
-                            <div class="couse__title">
-
+                            <div class="course__title">
+                                MS Excel - Zero to Hero
                             </div>
                             <div class="course__rating">
                                  <i class="fas fa-star"></i>
@@ -118,8 +141,8 @@
                             <figure class="course__img--wrapper">
                                 <img src="./assets/courses/c-programming.png" alt="Excel-Course" class="course__img">
                             </figure>
-                            <div class="couse__title">
-
+                            <div class="course__title">
+                                Let's C - Bootcamp
                             </div>
                             <div class="course__rating">
                                  <i class="fa fa-star-o"></i>
@@ -138,8 +161,8 @@
                             <figure class="course__img--wrapper">
                                 <img src="./assets/courses/Front-end.png" alt="Excel-Course" class="course__img">
                             </figure>
-                            <div class="couse__title">
-
+                            <div class="course__title">
+                                Front-End Development Mastery
                             </div>
                             <div class="course__rating">
                                  <i class="fa fa-star-o"></i>
@@ -158,13 +181,167 @@
                 </div>
             </div>
         </section>
-        <!-- <section id="highlights">
+        <section id="recent__courses">
             <div class="container">
                 <div class="row">
-                    
+                    <h2 class="courses__section--title 
+                    recent__courses__section--title">Other <span class="purple">Skills</span></h2>
+                    <div class="courses 
+                        recent__courses">
+                        <div class="course 
+                            recent__course">
+                            <figure class="course__img--wrapper">
+                                <img src="./assets/courses/Excel.png" alt="Excel-Course" class="course__img 
+                                recent__course--img
+                                recent__course__img--wrapper">
+                            </figure>
+                            <div class="course__title
+                            recent__course--title">
+                                MS Excel - Zero to Hero
+                            </div>
+                            <div class="course__rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                            </div>
+                           <div class="course__price">
+                                <span class="course__price--normal">$9</span> 
+                                $0 
+                                <!-- Commented due to not availibility -->
+                            </div>
+                        </div>
+                        <div class="course 
+                            recent__course">
+                            <figure class="course__img--wrapper">
+                                <img src="./assets/courses/c-programming.png" alt="Excel-Course" class="course__img 
+                                    recent__course--img
+                                    recent__course__img--wrapper">
+                            </figure>
+                            <div class="course__title
+                            recent__course--title">
+                                Let's C - Bootcamp
+                            </div>
+                            <div class="course__rating">
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                            </div>
+                            <div class="course__price">
+                                <span class="course__price--normal">coming soon..</span> 
+                                <!-- $0  -->
+                                <!-- Commented due to not availibility -->
+                            </div>
+                        </div>
+                        <div class="course 
+                            recent__course">
+                            <figure class="course__img--wrapper
+                            recent__course__img--wrapper">
+                                <img src="./assets/courses/Front-end.png" alt="Excel-Course" class="course__img 
+                                    recent__course--img">
+                            </figure>
+                            <div class="course__title
+                            recent__course--title">
+                                Front-End Development Mastery
+                            </div>
+                            <div class="course__rating">
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                            </div>
+                            <div class="course__price">
+                                <span class="course__price--normal">coming soon..</span> 
+                                <!-- $0  -->
+                                <!-- Commented due to not availibility -->
+                            </div>
+                        </div>
+                        <div class="course 
+                            recent__course">
+                            <figure class="course__img--wrapper
+                            recent__course__img--wrapper">
+                                <img src="./assets/courses/Front-end.png" alt="Excel-Course" class="course__img 
+                                    recent__course--img">
+                            </figure>
+                            <div class="course__title
+                            recent__course--title">
+                                Front-End Development Mastery
+                            </div>
+                            <div class="course__rating">
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                            </div>
+                            <div class="course__price">
+                                <span class="course__price--normal">coming soon..</span> 
+                                <!-- $0  -->
+                                <!-- Commented due to not availibility -->
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!-- <div class="course 
+                            recent__course">
+                            <figure class="course__img--wrapper
+                            recent__course__img--wrapper">
+                                <img src="./assets/courses/Front-end.png" alt="Excel-Course" class="course__img 
+                                    recent__course--img">
+                            </figure>
+                            <div class="course__title
+                            recent__course--title">
+                                Front-End Development Mastery
+                            </div>
+                            <div class="course__rating">
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                                 <i class="fa fa-star-o"></i>
+                            </div>
+                            <div class="course__price">
+                                <span class="course__price--normal">coming soon..</span> 
+                                $0
+                            </div>
+                        </div> -->
+                 </div>
+            </div>
+        </section>
+
+        <section id="explore">
+            <div class="container">
+                <div class="row row__column">
+                    <h2>Explore more <span class="purle">courses</span></h2>
+                    <a href="#features">
+                        <button class="btn">Browse courses</button>
+                    </a>
                 </div>
             </div>
-        </section> -->
+        </section> 
     </main>
+    <footer>
+        <div class="container">
+            <div class="row 
+                row_column">
+                <a href="#">
+                    <figure class="footer__logo">
+                        <img src="./assets/coding.png" alt="logo" class="footer__logo--img">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="#" class="footer__link">Home</a>
+                    <a href="#" class="footer__link no__cursor">About Us</a>
+                    <a href="#" class="footer__link">Courses</a>
+                    <a href="#" class="footer__link no__cursor">Contact</a>
+                </div>
+                <div class="footer__copyrig">Copyright &copy; 2022 | <a href="https://github.com/owais9061" target="_blank">Owais - The Foolish Engineer</a> </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

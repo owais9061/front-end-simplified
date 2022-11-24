@@ -14,6 +14,10 @@ nav {
     display: flex;
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -22,6 +26,14 @@ img {
 
 p {
     line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .nav__container {
@@ -79,6 +91,73 @@ a {
 .nav__link--primary a:hover {
     text-decoration: none;
 }
+
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: #7342d6;
+    display: none;
+
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    /* width: 98.75vw;
+    height: 100vh; */
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    /* display: flex; */
+    /* because we display flex the menu in the below menu__backdrop code */
+    justify-content: center;
+    align-items: center;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms ease-out;
+}
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+/* you can not animate something that is display:none  */
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open .menu__backdrop {
+    display: flex;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__link {
+    font-size: 40px;
+    color:whitesmoke
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 10px;
+    color: whitesmoke;
+}
+
 
 #landing {
     background-color: #7342d61a;
@@ -158,6 +237,16 @@ button {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.row__column {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.no__cursor {
+    cursor: not-allowed;
+}
 /*
  HIGHLIGHTS
   */
@@ -231,17 +320,33 @@ COURSES
     padding-top: 5vw;
 }
 
+#recent__courses {
+    padding-top: 5vw;
+}
+
 .courses {
     display:flex;
 }
 
 .course {
-    width: calc(100%/3);
+    width:33.33333%
 }
+
+.recent__course {
+    width: 25%;
+    margin-bottom: 25px;
+}
+
 .course__img {
     max-height: 300px;
     max-width: 360px;
     cursor: no-drop;
+}
+
+.recent__course--img {
+    max-width: 250px;
+    max-height: 250px;
+    cursor: pointer;
 }
 
 .course__img--wrapper {
@@ -251,13 +356,27 @@ COURSES
     display: flex;
 }
 
+.recent__course__img--wrapper {
+    border-radius: 10px;
+    object-fit: contain;
+}
+
 .course:hover .course__img {
     transform: scale(1.02);
+}
+
+.recent__course:hover .recent__course--img {
+    transform: scale(1.01);
 }
 
 .course__title {
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+.recent__course--title {
+    font-size: 16px;
+    margin-bottom: 6px;
 }
 
 .course__title:hover {
@@ -270,10 +389,94 @@ COURSES
     color: #fabf2a;
 }
 
-
-
 .course__price--normal {
     text-decoration: line-through;
     padding: 6px;
     color: #bfbfbf;
+}
+
+/* 
+    EXPLORE
+ */
+
+ #explore {
+    background-color: #7342d61a;
+ }
+
+/* 
+        FOOTER 
+*/
+
+footer {
+    background-color: #242424;
+}
+
+.footer__logo--img {
+    width: 75px;
+    height: 75px;
+    filter: invert(1);
+}
+
+.footer__link,
+.footer__copyright {
+    color: white;
+}
+
+.row_column {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.footer__List {
+    margin: 20px 0;
+}
+
+.footer__link {
+    padding: 0 8px;
+}
+
+
+/* PHONES TABLETS & SMARTPHONES */
+
+@media screen and (max-width: 768px) {
+
+    .header__description {
+        padding: 0 24px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    .course {
+        width: 50%;
+    }
+}
+
+/* RESPONSIVENES FOR SMALL LARGE PHONES*/
+
+@media (max-width:550px) {
+    .nav__links {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
+    }
+    .course {
+        width: 40%;
+    }
+
+    .course__title {
+        font-size: 15px;
+    }
 }
