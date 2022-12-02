@@ -4,9 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Registration - Canny Coders</title>
+    <link rel="stylesheet" href="./form-style.css">
 </head>
 <body>
+    <div class="container">
+<form onsubmit="sendEmail(); reset(); return false;" method="post">
+    <h2>Canny Coder's Course</h2>
+    <h3>Enrollment Form</h3>
+    <input type="text" id="name" placeholder="Your Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="student__id" placeholder="Your Canny Coder's ID">
+    <input type="number" id="number" placeholder="Phone Number" required>
+    <label for="course">Course.</label>
+    <select name="course-selection" id="course" required>
+        <option value="intial">Select Course</option>
+        <option value="c-programming">Let's C - Bootcamp</option>
+        <option value="c-programming">MS Excel - Zero to Hero</option>
+        <option value="c-programming">FrontEnd - Mastery</option>
+    </select>
+    <textarea name="feedback" id="feedback" cols="20" rows="5" placeholder="How you came to know about Canny Coders?"></textarea>
+    <button type="submit">Get Enrolled</button>
+</form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+               Host : "smtp.elasticemail.com",
+                Username : "cannycoders9061@gmail.com",
+                Password : "C16BC4183F528F153080F7984B36802E6639",
+                To : 'owaischaudhry906@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Registration !!",
+                Body : "Name: " + document.getElementById("name").value
+                    + "<br> Email: " +document.getElementById("email").value
+                    + "<br> CC ID: " +document.getElementById("student__id").value
+                    + "<br> Number: " +document.getElementById("number").value
+                    + "<br> Course: " +document.getElementById("course").value
+                    + "<br> Feedback: " +document.getElementById("feedback").value
+            }).then(
+              message => alert("Enrolled Successfully !!!!")
+            );
+        }
+    </script>
     
 </body>
 </html>
