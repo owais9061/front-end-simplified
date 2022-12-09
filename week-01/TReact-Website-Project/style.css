@@ -49,9 +49,8 @@ a {
 }
 
 .primary__button {
-    background-color: #ce29ec;
-    border: 1px solid black;
-    padding: 3px 20px;
+    background-color: #d779e8;
+    padding: 4px 20px;
     border-radius: 15px;
 }
 
@@ -82,6 +81,7 @@ nav img {
     padding: 10px;
     border-radius: 25px;
 }
+
 .hero__section--left button {
     padding: 10px;
     margin-left: 10px;
@@ -150,6 +150,7 @@ Section */
 }
 
 #features .service {
+    text-align: left;
     display: flex;
     padding: 15px 0;
     width:calc(100%/3);
@@ -158,6 +159,39 @@ Section */
     border-radius: 15px;
 }
 
+.service__title {
+    padding-left: 1rem;
+}
 .service__subtitle {
     color: gray;
+}
+
+/* PORTFOLIO 
+SECTION */
+
+.portfolio__columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+#portfolio .portfolio__title {
+    margin-bottom: 2rem;
+}
+
+#portfolio .portfolio__description {
+    margin-bottom: 2rem;
+}
+
+#portfolio button {
+    padding: 10px 30px;
+    background-color: #261fe3;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+.portfolio__right--img--wrapper {
+    width: 800px;
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.388);
+    margin-bottom: 3rem;
 }
