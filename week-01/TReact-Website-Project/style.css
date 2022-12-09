@@ -1,16 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Lato;
     
 }
 
-.row {
+img {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
-
 
 nav {
     display: flex;
@@ -18,8 +18,26 @@ nav {
     align-items:center;
     padding: 10px;
     margin: 15px auto;
-    background-color: aquamarine;
 }
+
+a {
+    text-decoration: none;
+}
+
+#hero__section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+
+}
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 .nav__list {
     display: flex;
@@ -27,27 +45,78 @@ nav {
 }
 
 .nav__list--item {
-    padding-left: 15px;
+    margin-left: 25px;
 }
 
-.hero__section {
-    height: 85vh;
-    background-color: aquamarine;
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.primary__button {
+    background-color: #ce29ec;
+    border: 1px solid black;
+    padding: 3px 20px;
+    border-radius: 15px;
+}
+nav img {
+    width: 100px;
 }
 
-.hero__section--left {
-    background-color:black;
+
+#hero__section .hero__section--left {
+    padding-left: 5rem;
+    padding-right: 4rem;
+    height: 90%;
     width: 40%;
 }
 
-.hero__section--right {
-    background-color:blue;
+.hero__section--left--title {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+.hero__section--left--subtitle {
+    font-size: 16px;
+    margin-bottom: 2.5rem;
+}
+
+.hero__section--left input {
+    margin-bottom: 3rem;
+    padding: 10px;
+    border-radius: 25px;
+}
+.hero__section--left button {
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: #ce29ec;
+    color: whitesmoke;
+    font-weight: 600;
+    border: 0;
+}
+
+.hero__left--img--wrapper {
+    width: 60%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero__left--img--wrapper img {
+    width: 60px;
+    height: 20px;
+}
+
+#hero__section .hero__section--right {
+    height: 90%;
+    padding-left: 5rem;
+    padding-right: 4rem;
     width: 60%;
 }
 
+.hero__section--img--wrapper {
+    width: 100%;
+}
+
+.hero__section--right img {
+    width: 600px;
+}
 .text__purple {
     color: purple;
 }
