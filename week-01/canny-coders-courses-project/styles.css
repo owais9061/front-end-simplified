@@ -381,7 +381,7 @@ COURSES
 
 .course__title:hover {
     text-decoration: underline;
-    cursor: no-drop;
+    /* cursor: no-drop; */
 }
 
 .course__rating {
@@ -390,9 +390,13 @@ COURSES
 }
 
 .course__price--normal {
-    text-decoration: line-through;
     padding: 6px;
     color: #bfbfbf;
+}
+
+.course__price--normal a {
+    padding: 6px;
+    color:#6621a7;
 }
 
 /* 
