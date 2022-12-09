@@ -140,9 +140,24 @@ Section */
 
 .features__subtitle {
     padding: 0 10rem;
+    color: grey;
 }
 
 #features .services {
+    margin-top: 3rem;
     display: flex;
     flex-wrap: wrap;
+}
+
+#features .service {
+    display: flex;
+    padding: 15px 0;
+    width:calc(100%/3);
+    flex-direction: column;
+    margin-bottom: 3rem;
+    border-radius: 15px;
+}
+
+.service__subtitle {
+    color: gray;
 }
