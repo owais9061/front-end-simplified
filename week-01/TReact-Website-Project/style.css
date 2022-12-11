@@ -232,3 +232,92 @@ DISPLAY
     margin-right: 1rem;
     color: gray;
  }
+
+
+ /* ------ PRICING 
+    SECTION 
+STYLING -------- */
+#pricing {
+    margin-top: 2rem;
+}
+#pricing .row {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing__title,
+.pricing__description {
+    margin: 1rem auto;
+    padding:0 10rem;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.plan {
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+}
+
+.plan__content {
+    background-color: antiquewhite;
+    padding: 0 2rem;
+    border-radius: 20px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.411);
+}
+
+.plan__content--highlighted {
+    background-color:rgba(9, 92, 152, 0.681);
+    color: antiquewhite;
+}
+
+.plan__content h6 {
+    margin: 1rem 0;
+}
+
+.plan__price {
+    font-size: 40px;
+}
+
+.plan__detail {
+    margin: 0.5rem 0;
+    font-size: 16px;
+}
+.plan ul {
+    list-style: none;
+}
+
+.plan hr {
+    width: 250px;
+    margin: 1rem 0;
+}
+
+.plan__cta--button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    color:antiquewhite;
+    background-color: rgba(59, 205, 59, 0.772);
+    cursor: pointer;
+}
+
+.plan__cta--button--highlighted {
+    background-color: antiquewhite;
+    color: rgba(9, 92, 152, 0.681);
+    font-weight: 600;
+}
+
+.plan__price,
+.plan__description,
+.plan h5 {
+    margin-bottom: 1rem;
+}
+
