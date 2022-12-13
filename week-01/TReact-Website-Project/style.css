@@ -329,6 +329,10 @@ footer {
     background-color: #d779e8;
 }
 
+.footer__lower {
+    background-color: #ab6fb6;
+}
+
 footer .row {
     display: flex;
     width: 100%;
@@ -371,4 +375,10 @@ footer .link a {
   
   footer .link a:hover::before {
     transform: scaleX(1);
+  }
+
+
+  .footer__lower figure img {
+    max-width: 150px;
+    margin-left: 1rem;
   }
