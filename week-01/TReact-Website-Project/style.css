@@ -331,6 +331,9 @@ footer {
 
 .footer__lower {
     background-color: #ab6fb6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer .row {
@@ -381,4 +384,19 @@ footer .link a {
   .footer__lower figure img {
     max-width: 150px;
     margin-left: 1rem;
+  }
+
+  .footer__social--icons {
+    display: flex;
+  }
+
+  .footer__social--icons img {
+    width: 24px;
+    margin: 0 1rem;
+    border-radius: 30%;
+  }
+
+  .footer__social--icons img:hover {
+    cursor: pointer;
+    filter: opacity(50%);
   }
