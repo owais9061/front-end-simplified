@@ -19,7 +19,7 @@ let price = 40
 let difference = cash - price
 if (cash>price)
 {
-    console.log('You have' ${difference} + " amount left")
+    console.log('You have +  amount left')
 }
 else if ( cash==price) {
     console.log('You have no money left')
