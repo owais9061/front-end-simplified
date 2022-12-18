@@ -20,3 +20,14 @@ anotherPracticeQuestions('Owais');
 anotherPracticeQuestions('Gujjar');
 anotherPracticeQuestions('Owais');
 anotherPracticeQuestions('Chaudhry');
+
+//FUNCTIONS with 2 perimeters
+function thirdPracticeQuestions (firstName, lastName) {
+    console.log(`welcome to House, ${firstName} ${lastName}`);
+}
+//Call the function
+//This function will ask for first and last name multiple times (reusable code).
+anotherPracticeQuestions('Owais', 'Chaudhry');
+anotherPracticeQuestions('Owais', 'Gujjar');
+anotherPracticeQuestions('Owais', 'Khan');
+anotherPracticeQuestions('The Foolish', 'Engineer');
