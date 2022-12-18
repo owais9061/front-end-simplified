@@ -59,3 +59,34 @@ console.log(sumOfTwoNumbers(5, 10));
 //it will now give output 15 becuase the function has it's repeatable values which is num1 and num2
 // and it will just ask for the values which are changebale like 5 or 10
 
+//A PRACTICE QUESTION
+
+//CREATE A FUNCTION THAT CONVERT CELCIUS TO FAREHNHEIT
+function convertCelciusToFarenheit() {
+    let celcius = 10
+    let farenheit = (celcius*1.8)+32
+    console.log(farenheit);
+}
+convertCelciusToFarenheit();
+
+//OR
+
+function convertToCelcius(celcius) {
+    let fahrenheit = (celcius*1.8) +32
+    return fahrenheit
+}
+console.log(convertToCelcius(10));
+console.log(convertToCelcius(24));
+console.log(convertToCelcius(97));
+console.log(convertToCelcius(65));
+//NOW JUST CHANGE THE 10 to any value and you are good to go
+
+
+
+//ANOTHER WAY OF DECLARING FUNCTION
+//ARROW METHOD
+
+const convertTempToFarenheit = (celcuss) => {
+    return celcuss * 1.8 + 32
+}
+console.log(convertTempToFarenheit(10));
