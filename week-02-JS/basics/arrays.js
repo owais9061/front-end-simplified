@@ -36,6 +36,6 @@ console.log(cart);
 
 
 
-//ARRAY FILTER METHOD
+//ARRAY FILTER METHOD  --> CALLBACK FUNCTION
 let arr1 = [10,20,30,40,'Owais']
 arr1.filter( ()=>{} )
