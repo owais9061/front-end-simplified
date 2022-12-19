@@ -38,4 +38,6 @@ console.log(cart);
 
 //ARRAY FILTER METHOD  --> CALLBACK FUNCTION
 let arr1 = [10,20,30,40,'Owais']
-arr1.filter( ()=>{} )
+arr1.filter( (element)=>{
+    console.log (element)
+} )  // () => {} is the indication for callback function
