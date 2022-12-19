@@ -40,4 +40,5 @@ console.log(cart);
 let arr1 = [10,20,30,40,'Owais']
 arr1.filter( (element)=>{
     console.log (element)
+    return true;
 } )  // () => {} is the indication for callback function
