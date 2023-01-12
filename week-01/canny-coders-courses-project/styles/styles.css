@@ -84,12 +84,13 @@ a {
 }
 
 .nav__link--primary:hover {
-    background-color: #6814b662;
+    background-color: #6814b69f;
     text-decoration: none;
 }
 
 .nav__link--primary a:hover {
     text-decoration: none;
+    color: whitesmoke;
 }
 
 .btn__menu {
