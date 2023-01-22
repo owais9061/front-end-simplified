@@ -122,3 +122,6 @@ for(let i=0; i<km1.length; i++){
     meter.push(km1[i]*1000)
 }
 console.log(meter)
+
+
+//! .push  / .filter + looping  /  .map + looping
