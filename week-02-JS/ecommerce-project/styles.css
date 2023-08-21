@@ -225,3 +225,41 @@ header .featured_books--button a {
 #featured__books--exp button a {
     color: whitesmoke;
 }
+
+/* FOOTER */
+
+#footer__section {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222222;
+}
+
+#footer__section .row {
+    margin: 1.5rem;
+}
+
+#footer__section .footer__logo {
+    width: 200px;
+    filter:invert(0.7);
+}
+
+#footer__section ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 150%;
+    margin: 2rem 2rem 2rem -3rem;
+    text-transform: uppercase;
+}
+
+#footer__section ul a {
+    color: rgb(203, 203, 203);
+}
+
+#footer__section .footer__copyright {
+    color: white;
+    font-weight: 500;
+}
