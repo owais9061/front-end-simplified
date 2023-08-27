@@ -16,28 +16,47 @@
 
 // // PROBLEM #03
 // //STORE
-let cash = 100;
-let price = 60;
-let difference = cash - price;
+// let cash = 100;
+// let price = 60;
+// let difference = cash - price;
 
-if(cash>price)
-{
-    console.log('You paid some extra amount ' + difference + ' rupees left')
+// if(cash>price)
+// {
+//     console.log('You paid some extra amount ' + difference + ' rupees left')
+// }
+// else if( cash == price ) {
+//     console.log("You left no balanace")
+// }
+// else {
+//     console.log('You are out of money')
+// }
+
+let cash = 100;
+let price = 600;
+let difference = cash-price;
+//NOW
+if(cash>price){
+    console.log('You purchased X, for $'+price+' & $'+difference+' left');
 }
-else if( cash == price ) {
-    console.log("You left no balanace")
+else if (cash==price){
+    console.log('You have no balance left, after purchasing X for $'+price);
 }
 else {
-    console.log('You are out of money')
+    console.log("You have no money to pruchase X");
 }
 
 
-// let cash = 50;
-// let price = 40;
-// let storeIsOpen = true;
-// if( cash>=price &&  storeIsOpen !== true ) {
-//     console.log('Print the Reciept')
-// }
+
+let cash1 = 50;
+let price1 = 40;
+let storeIsOpen = true;
+//if( cash1>=price1 &&  storeIsOpen == true ) {
+if( cash1>=price1 &&  storeIsOpen !== true ) {
+    console.log('Print the Reciept')
+}
+else {
+    console.log('store is closed');
+}
 
 // let subscribed = true;
 // let loggedIn = false;
@@ -53,19 +72,3 @@ else {
 //Ternary
 let hot = true
 hot ? console.log('Weatther is Hot'):console.log('Weather is not Hot')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
