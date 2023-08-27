@@ -69,6 +69,28 @@ else {
 // let str = cash>price && storeIsOpen !== false ? 'give reciept':'donot print'
 // console.log(str)
 
-//Ternary
+//! Ternary OPERATORS
+
 let hot = true
 hot ? console.log('Weatther is Hot'):console.log('Weather is not Hot')
+//In this the condition is assigned and now simple all we need is to check by ? whether it is true
+//there is no usecase for false in this ternary
+//FOR Example above will give output Weather is hot, but
+//IF we run below one:
+let hot1 = false
+hot1 ? console.log('Weatther is Hot'):console.log('Weather is not Hot')
+//this will display, whather is not hot, becuase the pre assigned conditon is false.
+
+//ANOTHER Example can be something like this
+let coursePurchased= true;
+let loggedIn = true;
+let user = coursePurchased && loggedIn ? 'Show the content':'Donot show the content';
+console.log(user);
+//this will show that show the content, becuase both of above are true.
+
+//ALSO FOR OR
+//use case= Udemy, preview of few lessons before purchasing the courses
+let coursePurchased1= false;
+let loggedIn1 = true;
+let user1 = coursePurchased1 || loggedIn1 ? 'Show the content':'Donot show the content';
+console.log(user);
