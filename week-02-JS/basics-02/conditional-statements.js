@@ -1,35 +1,35 @@
-// let subscribed = false
-// if (subscribed = false) {
-//     console.log('Subscriber')
+// let subscribed = true
+// if (subscribed === false) {
+//     console.log('Not Subscribed')
 // }
 // else {
-//     console.log('Not a Subscriber')
+//     console.log('Not Subscriber')
 // }
 
 
-// also!
+//! also...
 // let subscribed = false
 // let loggedIn = true
 // if (subscribed != true){console.log('Subscriber')}
-// else if (loggedIn=true){console.log('Not a Subscriber')}
+// else if (loggedIn != true){console.log('Not a Subscriber')}
 // else{console.log('Error')}
 
 // // PROBLEM #03
 // //STORE
-// let cash = 100;
-// let price = 60;
-// let difference = cash - price;
+let cash = 100;
+let price = 60;
+let difference = cash - price;
 
-// if(cash>price)
-// {
-//     console.log('You paid some extra amount ' + difference + ' rupees left')
-// }
-// else if( cash == price ) {
-//     console.log("You left no balanace")
-// }
-// else {
-//     console.log('You are out of money')
-// }
+if(cash>price)
+{
+    console.log('You paid some extra amount ' + difference + ' rupees left')
+}
+else if( cash == price ) {
+    console.log("You left no balanace")
+}
+else {
+    console.log('You are out of money')
+}
 
 
 // let cash = 50;
