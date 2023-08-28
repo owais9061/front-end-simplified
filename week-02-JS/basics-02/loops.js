@@ -57,11 +57,11 @@ for (let i=0;i<=20;i++){
 
 
 //!print out every single character from a string
-//! ' Couch Coding '
-// let str = 'Couch Coding'
-// for (let i = 0; i < str.length; i++) {
-//     console.log(str[i]); 
-// }
+//! 'CANNY CODERS'
+let str = 'CANNY CODERS'
+for (let i = 0; i < str.length; i++) {
+    console.log(str[i]); 
+}
 
 //! QUESTIONS GENERATED FOR PRACTICE (BY CHATGPT)
 //? 1 What will be printed when you run this code?
@@ -101,15 +101,15 @@ for (let i=0;i<=20;i++){
 //?10th term, but instead of printing the actual numbers, 
 //?print the sum of all previous terms.
 
-let a = 0;
-let b = 1;
+// let a = 0;
+// let b = 1;
 
-for (i=0;i<=22;i++){
-    console.log(b);
-    let temp = a;
-    a =b;
-    b=b+temp;
-}
+// for (i=0;i<=22;i++){
+//     console.log(b);
+//     let temp = a;
+//     a =b;
+//     b=b+temp;
+// }
 
 //? Write a loop that checks whether a given number is prime or not.
 
