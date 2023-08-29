@@ -1,4 +1,0 @@
-Here in this project, 
-Apartment Details (Webpage) will be created for every single option 1 room, 2 room, 3 room, Deleux, Luxury & Corporate
-Also the Blog pag is not yet configured to be set, so it's unavailable &  also the details of the blog
-Finally the Gallery page is still not done, as this project is focused around a single builder with multiple properties type.
