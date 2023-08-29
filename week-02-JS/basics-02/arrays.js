@@ -102,27 +102,28 @@ console.log(filterTopStudents(students, 90)); // Output: [{ name: 'Bob', score: 
 
 
 
+
+
 // //! EXERCISE
 // //? FILTER OUT FAIL GRADE FROM THE FOLLOWING ARRAY
 
-// let grades = ['A+','A','B','FAIL']
-// let newGrades = grades.filter(element => {
-//     console.log(element)
-//     if(element !== 'FAIL'){
-//         return true
-//     }
-// })
-// console.log(newGrades)
+let grades = ['A+','A','B','FAIL']
+let newGrades = grades.filter(element => {
+    console.log(element)
+    if(element !== 'FAIL'){
+        return true
+    }
+})
+console.log(newGrades)
 
-
-// //! LESS------------>
-// let newGrades1 = grades.filter(element => element !=='FAIL')
-// console.log(newGrades1)
+//! LESS------------>
+let newGrades1 = grades.filter(element => element !=='FAIL')
+console.log(newGrades1)
 
 
 //! WITHOUT FILTER METHOD
-//? LOOOOOOOOOOOOOOOOOOP
 
+//! MUST
 let grades1 = ['A+','A','B','FAIL']
 let newGrades2 = [];
 for(let i=0; i<grades1.length; i++){
@@ -132,11 +133,28 @@ for(let i=0; i<grades1.length; i++){
 }
 console.log(newGrades2)
 
+//! TESTING 
+
+let testGrades=['A+','A','B+','B','C','Owais']
+let upgradeTestGrades=[];
+for(let i=0;i<testGrades.length;i++){
+    if(testGrades[i]!=='Fail'){upgradeTestGrades.push(testGrades[i])}
+}
+console.log(upgradeTestGrades);
+
+//Filter our FAILS from the given Array
+let aArr=['A','B','F','F']
+let bArr=['A','B','C','F']
+let cArr=['A','F','F','F']
+let dArr= aArr.filter(element => element !=='F')+ bArr.filter(element => element !=='F')+ cArr.filter(element => element !=='F')
+console.log(''+dArr);
+
 //! .MAP
+// USED WHEN YOUW ANT TO CHNAGE ALL THE ELEMNTS OF AN ARRAY
 
 let grades2 = ['A+','A','B','F']
 grades2.map((element)=> {
-    console.log(element)
+    console.log(element) //PRINT ALL ELEMENTS A+,A,B,F
 })
 
 
@@ -145,14 +163,15 @@ let newGrades3 = grades3.map((element)=> {
     console.log(element)
     return undefined
 })
-console.log(newGrades3)
+console.log(newGrades3) //PRINT ALL ELEMENTS, but UNDEFINED
 
 
 //! LESS ---------------->
 let newGrades4 = grades3.map(element=>{
-    return 'Canny' //? CONVERSION
+    return 'CANNY CODERS 2.0' //? CONVERSION
 })
 console.log(newGrades4)
+
 
 //? 1- Dollar to cent / KM to m
 
@@ -162,6 +181,13 @@ let meters = km.map(element=>{
 })
 console.log(meters)
 
+//KM TO METER
+let arrKm = [1,34,23,54,11,12,87] //values is KM
+let arrM = [];
+for (let i=0;i<arrKm.length;i++){
+    arrM.push(arrKm[i]*1000)
+}
+console.log(arrM)
 
 
 //! LOOOOOOOOOOOOOOOOOOP
