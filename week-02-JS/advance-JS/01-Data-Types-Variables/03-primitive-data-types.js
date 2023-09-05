@@ -71,5 +71,6 @@ const myAge = 19;
 //  REFERENCE ---> values stored on Heap
 let person1 =[{
     name:'Owais',
-    age:18;
+    age:18,
 }]
+
