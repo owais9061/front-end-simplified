@@ -41,7 +41,7 @@ console.log(arr);
 
 //testing it with some objects
 const person ={
-    name: 'Owais'
+    name: 'Owais',
 }
 
 // Since const donot changes values of variable sbut it surely change values of it's properties (in thi case : name);
