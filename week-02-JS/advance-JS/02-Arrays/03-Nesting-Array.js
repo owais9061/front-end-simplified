@@ -33,3 +33,38 @@
 x=allFruits[1][2] // --> 1 means the second array (berries) and 2 is the item of array (cherry)
  console.log(allFruits)
  console.log(x)
+
+ //Now combing the two Arrays
+ //USING CONCATINATION
+ x=fruits1.concat(berries1)
+ console.log(x)
+
+ //ALSO USING SPREAD OPERATORS ( ... ) --> ... only fetch the items of ARRAY
+ x=[...fruits1, ...berries1]
+ console.log(x)
+
+ //FLATTEN ARRAY
+ const arr2=[1,2,3,[4,5],6,[7,8],9] //ARRAY WITHIN AN ARRAY
+ x=arr2.flat();
+ console.log(x)
+
+ //STATIC METHODS
+ /**
+  * isArray
+  * from
+  * of
+  */
+
+// isArray
+x = Array.isArray(fruits1) // it will return thether it is a Array or Not
+x = Array.isArray('Hello') //ERROR --> False
+console.log(x)
+
+//FROM --> Conevrt string to Array
+x=Array.from('12345');
+console.log(x)
+
+// OF --> COnvert values of variables to a Array
+const a=1,b="Owais",c=3
+x=Array.of(a,b,c)
+console.log(x)
