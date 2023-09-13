@@ -51,3 +51,23 @@ function first(){
     second()
 }
 first()
+
+
+// DECLARATION VS EXPRESSION --> FUNCTION
+
+// DECLARE --> Start of with keyword Function
+function addDollar(value){
+    return '$' + value;
+}
+console.log(addDollar(100))
+
+// EXPRESSION --> Function Assigned using Variable or To Variable
+
+const addSign = function addSymbol(value){
+    return '@' + value;
+}
+console.log(addSign("gmail.com"))
+
+// DIFFERENCE
+// HOISTING --> It means the functions in entire code are placed in the head of the website, even before they executed
+// while the function declared using variables are executed when needed or in there place
