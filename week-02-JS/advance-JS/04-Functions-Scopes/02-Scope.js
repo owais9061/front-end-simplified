@@ -23,8 +23,11 @@ sub(2,6)
 
 
 // Block SCOPE 
+
+// IMPORTANT CONCEPT
+
 // const  OR let --> Block
-// var --> GLobal
+// var --> Global
 
 if(true){
     const a=10,b=30
@@ -69,5 +72,6 @@ const addSign = function addSymbol(value){
 console.log(addSign("gmail.com"))
 
 // DIFFERENCE
+
 // HOISTING --> It means the functions in entire code are placed in the head of the website, even before they executed
 // while the function declared using variables are executed when needed or in there place

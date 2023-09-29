@@ -13,6 +13,9 @@ console.log(addTwo(1,2,3,4))
 const addThree =(a,b,c)=>a+b+c
 console.log(addThree(1,2,3))
 
+const addFour=(a,b,c,d)=>a+b+c+d
+console.log(addFour(1,2,3,4));
+
 // ALSO IF Function has signgle paramter, we can shorter it more ---> No Paranthesis Required
 const double= a => a*2;
 console.log(double(23))
@@ -24,3 +27,11 @@ const createdObj = () => ({
 });
 console.log(createdObj())
 // { name: 'owais', age: 19 }
+
+
+const newObj=()=>({
+    name:'Owais',
+    city:'Karachi',
+})
+console.log(newObj());
+// { name: 'Owais', city: 'Karachi' }

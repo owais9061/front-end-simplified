@@ -36,8 +36,11 @@ console.log(minMax([2,5,3,34,5,6]))
 
 // 3
 // (()=>{})
-((length,width)=>{
+(function(length,width){
     let area = width * length;
     const output =( `Area of Rectangle with Length: ${length} & Width: ${width} is ${area}`);
     console.log(output)
 })(2,4);
+
+const area1=(length,width)=>length*width;
+console.log(area1(4,2));

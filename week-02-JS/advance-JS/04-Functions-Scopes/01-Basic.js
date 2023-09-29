@@ -1,4 +1,4 @@
-// SIMPLE OUTPUT
+// SIMPLE OUTPUT --> No Paramter, no Return
 function sayHello(){
     console.log("Hello")
 }
@@ -15,20 +15,20 @@ function subtract(num1,num2){
     return num2-num1;
 }
 const ans=subtract(5,10)
+console.log(ans)
 console.log(ans,subtract(10,15))
+
 
 // MORE ON PARAMETERS AND ARGUMENTS
 
-
 //DEFAULT PARAMS
-
 function registerUser(user){
     return user + ' is registered';
 }
 console.log(registerUser('Owais'))
 
-//REST PARAMS
 
+//REST PARAMS
 function sum(...numbs){ //Unlimited arguments can be passed
     let total=0;
     for(const num of numbs){ // here the num represents the elements of numbs

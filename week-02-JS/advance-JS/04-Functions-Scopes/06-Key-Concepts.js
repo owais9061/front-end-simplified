@@ -18,10 +18,6 @@ console.log(sum1,sum2)
 // to Execution context and it is where the magic happens.
 // as the values of n1,n2 are not UNDEFINED they are EMPTY, because of the FUNCTION BLOCK.
 
-
-
-
-
 // CALL STACK
 /**
  * JS is SIngle Thread , Asynchronous Language so it operates of LIFO principle
