@@ -1,6 +1,7 @@
-//ARRAY is a Data Sructure, use to store Data. It's and Oject type
+//ARRAY is a Data Sructure, use to store Data. It's an Oject type
 
 let x;
+
 //ARRAY LITERAL
 let number=[12,13,14,15,16]
 console.log(number)
@@ -19,8 +20,10 @@ x=`My favourite fruit is ${fruits[0]} & ${fruits[2]}. They are very juicy`
 console.log(x)
 
 console.log(x.length)
+
 // CHANGE VALUE
 fruits[2]='Gujjar';
+
 //Change Length
 fruits.length=2; //Eliminate Gujjar
 x=fruits

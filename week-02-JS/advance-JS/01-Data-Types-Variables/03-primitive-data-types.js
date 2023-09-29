@@ -50,6 +50,7 @@ let person = [{
     age:19,
 }]
 //OR
+
 function printAns(num1,num2){
     
     let ans=num1+num2;
@@ -68,7 +69,7 @@ console.log(bigNum, typeof bigNum)
 const myName = "Owais Gujjar"
 const myAge = 19;
 
-//  REFERENCE ---> values stored on Heap
+//  REFERENCE ---> Values stored on Heap
 let person1 =[{
     name:'Owais',
     age:18,

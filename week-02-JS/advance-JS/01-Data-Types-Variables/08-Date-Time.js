@@ -77,4 +77,15 @@ x= d.toLocaleString('default', {
     timeZone: "America/New_York",
 }) // a beautiful looking custom Date object for all the stuff that has been done above.
 
+x=d.toLocaleString('default',{
+    weekday: "long",
+    year:"numeric",
+    month:"short",
+    day: "numeric",
+    hour:"numeric",
+    minute: "numeric",
+    second:"numeric",
+    timeZone:"America/New_York", //Go check the DOCS on Mozilla for further timezones of the date objects
+})
+
 console.log(x)

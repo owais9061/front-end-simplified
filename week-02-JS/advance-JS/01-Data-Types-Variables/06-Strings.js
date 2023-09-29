@@ -18,6 +18,8 @@ let user={
 
 const info= `Hellow , I'm testing this Template Literal here, My name is ${user.name} & I'm ${user.age} years old Developer from ${user.city}. here's my contact number: ${user.number}`;
 console.log(info)
+
+
 // String Properties & Methods
 /**
  * length
@@ -28,9 +30,12 @@ console.log(info)
  * index of
  * Substring
  * Trim
+ * split
  * Include
  * Replace
  */
+
+
 //Creating a new string here
 let newStr='Owais Gujjar'
 //Length

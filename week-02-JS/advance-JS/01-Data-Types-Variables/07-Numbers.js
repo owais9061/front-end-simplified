@@ -38,6 +38,7 @@ console.log(Math.floor(Math.random()*10+1));
 let X, Y;
 X=Math.floor(Math.random()*100+1);
 Y=Math.floor(Math.random()*50+1);
+
 const add=X+Y,
 diff=X-Y,
 quotient=X/Y,
