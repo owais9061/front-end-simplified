@@ -14,6 +14,9 @@
 //     [ 'strawberry', 'bluberry', 'cherry' ]
 //   ]
  console.log(fruits)
+
+ // BASICALLY PUSH creates a new Array within already created Array, 
+ // it donot just include the items, it include the whole arrays
  
  //Accessing the item of nested 
  let x;

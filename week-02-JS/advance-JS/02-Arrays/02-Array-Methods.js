@@ -1,4 +1,5 @@
 const arr =[12,13,14,15,16,17]
+
 /**
  * METHODS OF ARRAYS:
  * push
@@ -56,5 +57,6 @@ console.log(x)
 
 //Creating a New Array becuase of Splice
 const newArr = [1,2,3,4,5,6,7,8,9]
-x=newArr.reverse().toString().charAt(1); //just testing
+x=newArr.reverse().toString().charAt(0); //just testing
+x=newArr.toString().charAt(0); //just testing
 console.log(x)

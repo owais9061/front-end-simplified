@@ -5,8 +5,10 @@ const person ={
     address:'Karachi',
 }
 console.log(person)
+
 //OR Access Specific Value
 console.log(person.name);
+
 // ALSO
 x= person['age']
 console.log(x)
@@ -23,16 +25,18 @@ const person1 ={
     },
     hobbies: ['Coding','Boxing','Learning New Things'] //ARRAY
 }
-
 console.log(person1.hobbies[0]) //Coding
+
 //OR
 x= `hey I'm ${person1.name}, I'm currently living in ${person1.address.City} - Street: ${person1.address.Street}. I like to do ${person1.hobbies[0]} mostly, but sometimes ${person1.hobbies[2]} is something that excites me.`
 //OR USING ANOTHER METHOD
 x= `hey I'm ${person1['name']}, I'm currently living in ${person1['address']['City']} - Street: ${person1.address.Street}. I like to do ${person1.hobbies[0]} mostly, but sometimes ${person1.hobbies[2]} is something that excites me.`
 console.log(x)
 
-//ADDING
+x= `Hey Peeps! I'm ${person1['name']}`
+x= `Hey Peeps! I'm ${person1.name}`
 
+//ADDING
 person1.isStudent=true;
 console.log(person1)
 
@@ -44,8 +48,13 @@ console.log(person1.address.Building);
 
 //ANOTHER METHOD FOR CREATING PROPERTIES OF OBJECTS
 let person3={
-    'First Name':'OWais ',
+    'First Name':'Owais ',
     'Last Name':'Gujjar',
 }
-
 console.log(person3["First Name"] + person3["Last Name"])
+
+let person4={
+    'New Name':'Owaiss ',
+    'Belongs to':'Gujjars Family',
+}
+console.log(person4["New Name"] + person4["Belongs to"])

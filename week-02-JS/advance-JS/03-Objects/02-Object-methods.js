@@ -2,6 +2,7 @@ let x;
 
 //CONSTRUCTOR
 const todo = new Object();
+
 todo.id=1;
 todo.name='Buy Grocery';
 todo.status=false;
@@ -33,12 +34,10 @@ const obj3={...obj1,...obj2};
 console.log(obj3);
 
 //ASSIGNING METHOD
-
 const obj4= Object.assign({},obj1,obj2) // ---> {} here identity obj4 as Object and then add values of obj1
 console.log(obj4);
 
 //ALSO NOW IF I HAVE TO CREATE MULTIPLE OBJECTS WITHIN A OBJECT THEN
-
 const user =[
     {
         name:'Owais ',
@@ -118,7 +117,7 @@ const post1={
     pera:"I don't know any of them, But SOON !!!"
 }
 
-const str = JSON.stringify(post)
+const str = JSON.stringify(post1)
 // GIVE THIS KIND OF STRING OUTPUT, NO TOGGLE LIST
 // DATA TO SERVER IS SEND IN THIS FORMAT 
 // {"sNo":1,"title":"Advantages of JSON","pera":"I don't know any of them, But SOON !!!"}
@@ -192,6 +191,8 @@ console.log(title1)
 // TASK 4
 const str3 = JSON.stringify(library);
 console.log(str3)
+
+// MAINLY used when we are creating some kind of API, which has to have a large amount of DATA
 
 // ANSWER:
 // [{"id":112,"title1":"Atomic Habbits","author":"James Clear","status":{"own":true,"reading":false,"read":false}},
