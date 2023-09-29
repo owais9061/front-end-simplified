@@ -20,11 +20,12 @@ const info= `Hellow , I'm testing this Template Literal here, My name is ${user.
 console.log(info)
 // String Properties & Methods
 /**
- *  .length
- * .uppercase
- * .lowercase
- * .split
+ * length
+ * uppercase
+ * lowercase
+ * split
  * charAt
+ * index of
  * Substring
  * Trim
  * Include
@@ -55,7 +56,7 @@ console.log(newStr.substring(0,5)) //will give Owais O=0, W=1, A=2, I=3 & S=4
 //ALSO
 console.log(newStr.substring(5))// will print GUJJAR just
 
-// NOW using TRIM for removing special charatcers or Space
+// NOW using TRIM for removing special characters or Space
 let newStr1='         Owais'
 console.log(newStr1.trim());
 
