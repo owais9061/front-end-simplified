@@ -54,9 +54,7 @@ console.log(canVote); // You can vote!
 
 const auth = true;
 
-const redirect = auth
-  ? (alert('Welcome To The Dashboard'), '/dashboard')
-  : (alert('Access Denied'), '/login');
+const redirect = auth ? (alert('Welcome To The Dashboard'), '/dashboard') : (alert('Access Denied'), '/login');
 
 console.log(redirect);
 
@@ -65,12 +63,7 @@ console.log(redirect);
 
 // We can also have multiple ternary operators and conditions. Much like an else-if.
 
-const canDrink =
-  age >= 21
-    ? 'You can drink!'
-    : age >= 18
-    ? 'You can have 1 beer'
-    : 'You can not drink';
+const canDrink = age >= 21 ? 'You can drink!' : age >= 18 ? 'You can have 1 beer' : 'You can not drink';
 
 console.log(canDrink);
 
