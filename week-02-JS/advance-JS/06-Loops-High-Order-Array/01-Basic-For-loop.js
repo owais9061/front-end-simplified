@@ -93,22 +93,31 @@ for(let k=0;k<=2;k++){
 
 // Looping Over Arrays
 
-Arrays have a `forEach()` method that allows you to loop over them. This is the most common way to loop over an array and we will be looking at `forEach()` and other array methods soon, however I do want to show you that we can loop over an array with a `for` loop.
+// Arrays have a `forEach()` method that allows you to loop over them. 
+// This is the most common way to loop over an array.
 
-```JavaScript
-const names = ['Brad', 'Sam', 'Sara', 'John', 'Tim'];
+const names = ['Owais','Gujjar','Owais Gujjar'];
 
 for (let i = 0; i < names.length; i++) {
     console.log(names[i]);
 }
 
-```
+// CHALLENGE Add  ANY NAME IN CONSOLE
+// Add ' in JS ' after FullStack Coder in Console.
 
-We simply specify the condition expression as long as `i` is less than the length of the array.
+const names1=['Owais','Owais Gujjar','Gujjar','Owais G.','FullStack Coder']
+for(let i=0;i<names1.length;i++){
+  if(i===4){
+    console.log(names[i]+' in JS')
+  }
+  else{
+    console.log(names[i])
+  }
+}
 
-If you wanted to find a specific iteration and index, you could do something like this
 
-```JavaScript
+// If you wanted to find a specific iteration and index, you could do something like this
+
 for (let i = 0; i < names.length; i++) {
   if (i === 2) {
     console.log(names[i] + ' is the best');
@@ -117,16 +126,11 @@ for (let i = 0; i < names.length; i++) {
   }
 }
 
-```
+// Infinite Loops
 
-### Infinite Loops
+// Infinite loops are something that you will probably run into at one point or another.
+// To purposely create an infinite `for` loop, we could do this:
 
-Infinite loops are something that you will probably run into at one point or another. They are loops that will never stop running. One common cause of this is forgetting to increment the counter. Then the condition is always met. This happens more with while loops, because of the way they are formatted.
-
-To purposely create an infinite `for` loop, we could do this:
-
-```JavaScript
 for (let i = 0; i < Infinity; i++) {
   console.log('Number ' + i);
 }
-```
