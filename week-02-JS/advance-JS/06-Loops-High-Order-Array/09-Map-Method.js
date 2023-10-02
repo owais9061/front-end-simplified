@@ -51,7 +51,7 @@ const compInfo=companies.map((element)=>{
 
 
 // Let's create an array of objects with the name and the length of each company in years:
-
+ 
 const nameAndLength = companies.map((element)=>{
     return{
         name: element.name,
@@ -75,5 +75,4 @@ console.log(squareAndDouble);
 // We can chain different methods together to create more complex functionality. Let's say that we want to filter the even numbers and then double them, we can chain `map()` and `filter()` together:
 
 const evenDouble = numbers.filter((number) => number % 2 === 0).map((number) => number * 2);
-
 console.log(evenDouble); // [4, 8, 12, 16, 20]
